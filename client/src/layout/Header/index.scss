@@ -1,0 +1,39 @@
+header {
+  height: 1000px;
+  background-image: url("https://preview.colorlib.com/theme/course/images/slider_background.jpg");
+  padding: 40px;
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  .phone {
+    padding: 40px;
+    margin-left: 20px;
+    background-color: orange;
+  }
+}
+
+.header {
+  margin-top: -350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 1200px;
+  position: fixed;
+  h1 {
+    margin-left: -180px;  
+  }
+}
+#home {
+  h1 {
+    margin-top: 350px;
+    margin-left: 200px;
+    font-size: 60px;
+    color: white;
+  }
+}
