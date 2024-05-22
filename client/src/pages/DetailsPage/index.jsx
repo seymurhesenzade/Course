@@ -1,6 +1,10 @@
+import Body from "../../layout/Body"
+
 const DetailsPage = () => {
   return (
-    <div></div>
+    <div>
+      <h1></h1>
+    </div>
   )
 }
 
