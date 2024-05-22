@@ -1,6 +1,10 @@
+import Body from "../../layout/Body"
+
 const HomePage = () => {
   return (
-    <div></div>
+    <div>
+      <Body/>
+    </div>
   )
 }
 
