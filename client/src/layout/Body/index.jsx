@@ -28,7 +28,7 @@ const Body = () => {
                     <Card
                       hoverable
                       style={{
-                        width: 350,
+                        width: 350,marginBottom:"200px"
                       }}
                       cover={
                         <img

@@ -12,12 +12,12 @@ const Header = () => {
             <h1>COURSE</h1>
             <nav>
               <ul>
-                <li><Link>Home</Link></li>
-                <li><Link>About Us</Link></li>
-                <li><Link>Courses</Link></li>
-                <li><Link>Elements</Link></li>
-                <li><Link>News</Link></li>
-                <li><Link>Contact</Link></li>
+                <li><Link style={{color:"black"}} to={"/"}>Home</Link></li>
+                <li><Link  style={{color:"black"}}to={"/"}>About Us</Link></li>
+                <li><Link  style={{color:"black"}}to={"/add-product"}>Add</Link></li>
+                <li><Link  style={{color:"black"}}to={"/details-page"}>Detail</Link></li>
+                <li><Link  style={{color:"black"}}to={"*"}>NotPage</Link></li>
+                <li><Link style={{color:"black"}}>Contact</Link></li>
             
               </ul>
             </nav>
