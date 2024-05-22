@@ -40,11 +40,13 @@ const Body = () => {
                       <Meta title={p.title} style={{textAlign:"center"}} />
                        <Meta description={p.desc} style={{marginTop:"10px",textAlign:"center", fontWeight:"700"}} />
                        <div className="image-text">
-                       <img style={{marginTop:"25px", borderRadius:"50%"}}  src="https://preview.colorlib.com/theme/course/images/author.jpg"/>;
+                       <img style={{marginTop:"25px", borderRadius:"50%"}}  src="https://preview.colorlib.com/theme/course/images/author.jpg"/>
                        <div className="text">
-                       Michael Smith, Author
+                      Michael Smith, Author
                         </div> 
-
+                        <div className="price">
+                            <p>${p.price}</p>
+                        </div>
                        </div>
                     </Card>
                   </Col>
