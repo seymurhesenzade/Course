@@ -17,3 +17,12 @@ export async function getDataById(id){
         console.log(error);
     }
 }
+
+export async function getDeleteById(id){
+    try {
+        const response = await axios(`${BASE_URL}/products/${id}`);
+        return response;
+    } catch (error) {
+        console.log(error);
+    }
+}

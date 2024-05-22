@@ -12,7 +12,7 @@ const Body = () => {
     getAllData().then((res) => {
       setProduct(res.data.data);
     });
-  }, []);
+  },[]);
 
   return (
     <>
@@ -24,20 +24,28 @@ const Body = () => {
            {
             product && product.map((p)=>{
                 return (
-                    <Col className="gutter-row" span={6} xs={24} md={12} lg={8} style={{display:"flex", justifyContent:"center"}}>
+                    <Col key={p._id} className="gutter-row" span={6} xs={24} md={12} lg={8} style={{display:"flex", justifyContent:"center"}}>
                     <Card
                       hoverable
                       style={{
-                        width: 240,
+                        width: 350,
                       }}
                       cover={
                         <img
                           alt="example"
-                          src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                          src={p.imageUrl}
                         />
                       }
                     >
-                      <Meta title="Europe Street beat" desc="www.instagram.com" />
+                      <Meta title={p.title} style={{textAlign:"center"}} />
+                       <Meta description={p.desc} style={{marginTop:"10px",textAlign:"center", fontWeight:"700"}} />
+                       <div className="image-text">
+                       <img style={{marginTop:"25px", borderRadius:"50%"}}  src="https://preview.colorlib.com/theme/course/images/author.jpg"/>;
+                       <div className="text">
+                       Michael Smith, Author
+                        </div> 
+
+                       </div>
                     </Card>
                   </Col>
                 )
